@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/superslides.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link rel="stylesheet" href="css/res.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div>
+        <!-- Start header -->
+        <header>
+            <nav class="navbar">
+                <div class="pc-layout">
+                    <a href="#" class="nav-logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <!-- <button></button> -->
+                    <div class="main-menu">
+                        <ul class="menu">
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link drop-toggle" onclick="view('s1');">Pages</a>
+                                <div class="dropdown-menu" id="s1">
+                                    <a href="#">Reservation</a>
+                                    <a href="#">Stuff</a>
+                                    <a href="#">Gallery</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link drop-toggle" onclick="view('s2')">Blog</a>
+                                <div class="dropdown-menu" id="s2">
+                                    <a href="#">blog</a>
+                                    <a href="#">blog Single</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End header -->
+        <!-- Start Slide -->
+        
+        <input type="radio" id="check-1" name="slide-radio" checked="checked">
+        <input type="radio" id="check-2" name="slide-radio">
+        <input type="radio" id="check-3" name="slide-radio">
+
+        <div class="content-area">
+            <!-- img slide -->
+            <div class="text-box">
+                <div class="text-center">
+                    <h1>Welcome To</h2>
+                        <h2 class="slide-text-1">Live Dinner Restaurant</h2>
+                        <h2 class="slide-text-2">Live Dinner Restaurant</h2>
+                        <h2 class="slide-text-3">Yamifood Restaurant</h2>
+                        <p>See how your users experience your website in realtime or view trends to see any changes in
+                            performance over time.
+                        </p><br />
+                        <p>
+                            <a href="#" class="btn">Reservation</a>
+                        </p>
+                </div>
+            </div>
+            <!-- slide navigation -->
+            <div class="slide-navigation">
+                <a href="#" onclick="next()" class="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="#" onclick="prev()" class="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            </div>
+            <!-- slide paging -->
+            <div class="div-slide">
+                <ul class="slide-paging">
+                    <li class="paging-1">
+                        <label for="check-1">
+                            <span class="disc"></span>
+                            <span class="active-disc"></span>
+                        </label>
+                    </li>
+                    <li class="paging-2">
+                        <label for="check-2">
+                            <span class="disc"></span>
+                            <span class="active-disc"></span>
+                        </label>
+                    </li>
+                    <li class="paging-3">
+                        <label for="check-3">
+                            <span class="disc"></span>
+                            <span class="active-disc"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Slide -->
+        <!-- Start About -->
+        <div class="div-about">
+            <div class="pc-layout">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                        <div class="left-column">
+                            <h1>
+                                Welcome To
+                                <span>Live Dinner Restaurant</span>
+                            </h1>
+                            <h4>Little Story</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit
+                                feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend
+                                luctus, odio ante sodales augue, eget lacinia lectus erat et sem.</p>
+                            <br/>
+                            <p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus
+                                lorem, a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et
+                                maximus sem pulvinar.</p><br/>
+                            <a href="" class="btn">Reservation</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="img/about-img.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End About -->
+        <!-- Start QT -->
+        <div class="qt-bg">
+            <div class="pc-layout">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <p class="lead-center">
+						" If you're not the one cooking, stay out of the way and compliment the chef. "
+                    </p>
+                    <p class="lead-center span">Michael Strahan</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- End QT -->
+    </div>
+
+</body>
+<script src="js/js.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</html>
